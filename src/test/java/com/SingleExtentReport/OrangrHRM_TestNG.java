@@ -24,7 +24,7 @@ public class OrangrHRM_TestNG {
 		//Thread.sleep(5000);
 		driver.findElement(By.id("btnLogin")).click();
 		//Thread.sleep(5000);
-		String expectedUrl = "https://opensource-demo.orangehrmlivelo.com/index.php/dashboard";
+		String expectedUrl = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		String actualUrl = driver.getCurrentUrl();
 		Assert.assertTrue(expectedUrl.equals(actualUrl));	
 	}
