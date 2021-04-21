@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="classes" thread-count="3">
+<listeners>
+	<listener class-name="com.ExtentReport.Listener"/>
+</listeners>
+	<test name="Test">
+		<classes>
+			<class name="com.SingleExtentReport.Navigation_Commands" />
+			<class name="com.SingleExtentReport.OrangrHRM_TestNG" />
+			<class name="com.SingleExtentReport.ScrollElement" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
