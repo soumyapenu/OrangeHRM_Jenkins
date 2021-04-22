@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class ReadPDFExample {
+public class Test_ReadPDFExample {
 	 WebDriver driver;
 	 @BeforeTest
 	 public void setup() throws Exception {

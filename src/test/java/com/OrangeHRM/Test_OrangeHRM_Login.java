@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.*;
 
 import org.junit.Test;
 
-public class OrangeHRM_Login {
+public class Test_OrangeHRM_Login {
 
 	@SuppressWarnings("deprecation")
 	@Test

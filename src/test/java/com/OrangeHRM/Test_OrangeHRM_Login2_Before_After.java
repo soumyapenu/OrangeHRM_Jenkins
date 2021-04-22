@@ -3,17 +3,17 @@ package com.OrangeHRM;
 import static org.junit.Assert.*;
 
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import junit.framework.Assert;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.*;
-import org.openqa.selenium.edge.EdgeDriver;
+
 import org.junit.Test;
 
-public class Login_Verification {
+public class Test_OrangeHRM_Login2_Before_After {
 	WebDriver driver;
 	@SuppressWarnings("deprecation")
 	@Test
@@ -25,19 +25,15 @@ public class Login_Verification {
 		//Thread.sleep(5000);
 		driver.findElement(By.id("btnLogin")).click();
 		//Thread.sleep(5000);
-		//driver.findElement(By.linkText("Dashboard")).isDisplayed();
 		String expectedUrl = "https://opensource-demo.orangehrmlive.com/index.php/dashboard";
 		String actualUrl = driver.getCurrentUrl();
-		String expectedTitle = "OrangeHRM";
-	    String actualTitle = driver.getTitle();
-		Assert.assertEquals(expectedUrl, actualUrl);
-		Assert.assertEquals(expectedTitle, actualTitle);
+		Assert.assertTrue(expectedUrl.equals(actualUrl));		
 
 	}
 	@Before
 	public void launchBrowser() throws InterruptedException {
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 		//Thread.sleep(5000);
 		driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login");
 	}
