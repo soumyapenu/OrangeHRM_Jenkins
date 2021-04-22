@@ -10,9 +10,9 @@ public class TestData {
 	public Object[][] getDataforLogin() {
 		//multiple dimensional object
 		return new Object[][] {
-			{"Admin", "admin123"},
-			{"kumar", "admin123"},
-			{"dixit", "admin123"}
+			{"Admin", "admin123"}
+//			{"kumar", "admin123"},
+//			{"dixit", "admin123"}
 		};
 		
 	}
